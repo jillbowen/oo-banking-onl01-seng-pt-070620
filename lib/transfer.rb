@@ -24,7 +24,7 @@ class Transfer
   end
   
   def reverse_transfer
-    if @status = "complete" && @status != "reversed"
+    if @status = "complete" && execute_transaction != "rejected"
       @receiver.balance -= @amount
       @sender.balance += @amount
       @status = "reversed"
