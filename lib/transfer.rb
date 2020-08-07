@@ -16,8 +16,9 @@ class Transfer
     @sender.balance -= @amount
     @receiver.balance += @amount
     @status = "complete"
-    if @status = "complete"
+      if @status = "complete"
       @amount = 0 
+      end
   end
   
 end
