@@ -13,7 +13,7 @@ class Transfer
   end
   
   def execute_transaction
-   @balance =  @balance-@amount
+    
   end
   
 end
